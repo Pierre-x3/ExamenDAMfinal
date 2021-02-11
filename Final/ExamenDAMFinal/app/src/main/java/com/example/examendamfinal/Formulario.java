@@ -41,7 +41,7 @@ public class Formulario extends AppCompatActivity {
 
                 if(mensaje==null){
                     Intent intent = new Intent(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse("geo:<"+longitud.getText().toString()+">,<"+latitud.getText().toString()+">?q=<"+longitud.getText().toString()+">,<"+latitud.getText().toString()+">("+longitud.getText().toString()+")"));
+                    intent.setData(Uri.parse("geo:<"+longitud.getText().toString()+">,<"+latitud.getText().toString()+">?q=<"+longitud.getText().toString()+">,<"+latitud.getText().toString()+">("+marcador.getText().toString()+")"));
                     if (intent.resolveActivity(getPackageManager()) != null) {
                         startActivity(intent);
                     }
